@@ -1,0 +1,56 @@
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+.python-version
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+wheels/
+dist/
+build/
+*.egg-info/
+.eggs/
+__pypackages__/
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Testing / Linting / Coverage ---
+.pytest_cache/
+.coverage*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+pytestdebug.log
+
+# --- Logs ---
+*.log
+
+# --- Env / Secrets (keep example) ---
+.env
+.env.*
+!.env.example
+client_secret.json
+*token.json
+*credentials.json
+
+# --- Project runtime artifacts ---
+analytics_events.jsonl
+crm.json
+.mem/
+
+# Compiled DSPy hints/artifacts (keep folder, ignore contents)
+experiments/.artifacts/*
+!experiments/.artifacts/.gitkeep
