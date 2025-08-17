@@ -60,7 +60,7 @@ def list_upcoming_events(max_results: int = 5) -> Dict[str, Any]:
     service = _get_service()
     if not service:
         return {"enabled": False, "reason": "Calendar not configured. Provide GOOGLE_CLIENT_SECRETS and run OAuth."}
-    now = datetime.utcnow().isoformat() + "Z"
+    now = datetime.now().isoformat() + "Z"
     events_result = service.events().list(
         calendarId="primary", timeMin=now, maxResults=max_results, singleEvents=True, orderBy="startTime"
     ).execute()
